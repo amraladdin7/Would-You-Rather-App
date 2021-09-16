@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.login-head {
+  margin: 1% 1% 0% 1%;
+  display: flex;
+  background-color: rgb(112, 187, 197);
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  width: 100vh;
+}
+
+.new-head {
+  margin: 1% 1% 0% 1%;
+  display: flex;
+  background-color: rgb(177, 216, 221);
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  width: 100vh;
+}
+
+.sign-in {
+  margin: 0% 1% 1% 1%;
+  display: flex;
+  z-index: 1;
+  border: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100vh;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+.create {
+  margin: 0% 1% 1% 1%;
+  display: flex;
+  z-index: 1;
+  border: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 88vh;
+  align-items: left;
+  justify-content: left;
+  height: 25vh;
+  flex-direction: column;
+  padding: 3em;
+}
+
+select {
+  width: 100%;
+  height: 1cm;
+}
+
+.button {
+  width: 100%;
+  background-color: rgb(175, 216, 221);
+}
+
+h1 {
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgb(192, 225, 229);
+  width: auto;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: auto;
+}
+
+.tab button:hover {
+  background-color: rgb(145, 192, 197);
+}
+
+.tab button.active {
+  background-color: rgb(50, 139, 151);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.new-container {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  height: 100px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.question {
+  width: 120%;
+  max-width: 590px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: white;
+  text-decoration: none;
+}
+
+.question-info {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.nav li:first-child {
+  padding-left: 0;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: rgb(145, 192, 197);
+}
+
+.active {
+  background-color: rgb(50, 139, 151);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  list-style-type: none;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.options {
+  opacity: 75%;
+  color: rgb(27, 38, 88);
+}
+
+.or {
+  opacity: 100%;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.unique {
+  margin-top: 10em;
+}
+
+.submit-answer {
+  margin-left: 25em;
+}
+
+.selected {
+  color: white;
+  font: bolder;
+  background-color: blue;
+  text-indent: 3em;
+}
+
+.percentage {
+  color: blue;
+}
+
+input {
+  border-radius: 4px;
+  border: 1px solid #dad7d7;
+  padding: 10px;
+  font-size: 15px;
+  height: 10px;
+  display: inline-block;
+}
+
+input.new {
+  border-radius: 4px;
+  border: 1px solid #dad7d7;
+  padding: 10px;
+  font-size: 15px;
+  width: 80%;
+  height: 10px;
+  display: inline-block;
+}
+
+.new-question {
+  display: block;
+  width: 83%;
+  height: 35px;
+  margin-top: 2em;
+  background-color: rgb(177, 216, 221);
+  cursor: pointer;
+}
+
+.user {
+  width: 120%;
+  max-width: 590px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: white;
+  text-decoration: none;
+}
+
+.user-info {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.score {
+  font-size: 1cm;
+  font-weight: 900;
+  align-items: center;
+  padding: 1em;
+}
+
+.avatar-login {
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.user-name {
+  padding: 1em;
+}
