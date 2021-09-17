@@ -1,6 +1,6 @@
 # Would you rather Project
 
-This is the first project for udacity's advanced NanoDegree. The project is a poll game that lets users create questions for others to answer.
+This is the second project for udacity's advanced NanoDegree. The project is a poll game that lets users create questions for others to answer.
 
 ## How to begin?
 
