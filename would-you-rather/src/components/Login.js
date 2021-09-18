@@ -6,7 +6,6 @@ import { Redirect } from "react-router-dom";
 class Login extends Component {
   state = {
     user: "",
-    login: false,
   };
 
   componentDidMount() {
@@ -24,16 +23,13 @@ class Login extends Component {
     e.preventDefault();
     this.props.dispatch(setAuthedUser(this.state.user));
     console.log("Authed user is: ", this.state.user);
-    this.setState({
-      login: true,
-    });
   };
 
   render() {
-    const { user, login } = this.state;
-    const { userIds, users } = this.props;
+    const { user } = this.state;
+    const { userIds, users, authedUser } = this.props;
 
-    if (login) {
+    if (authedUser !== null) {
       return <Redirect to="/home" />;
     }
 
@@ -71,10 +67,11 @@ class Login extends Component {
   }
 }
 
-function mapStateToProps({ users }) {
+function mapStateToProps({ users, authedUser }) {
   return {
     userIds: Object.keys(users),
     users,
+    authedUser,
   };
 }
 
